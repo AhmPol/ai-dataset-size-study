@@ -257,7 +257,6 @@ plt.title("Normalized Accuracy Heatmap Across Trials")
 plt.savefig("charts/normalized_accuracy_heatmap.png")
 plt.close()
 
-
 for model in models:
     subset = summary_df[summary_df['Model'] == model]
     g = sns.jointplot(data=subset, x='Avg Prediction Time (s)', y='Accuracy (%)', kind='reg')
