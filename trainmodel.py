@@ -1,3 +1,9 @@
+import tensorflow as tf
+import pathlib
+import matplotlib.pyplot as plt
+import time
+import pandas as pd
+
 from google.colab import drive
 drive.mount('/content/drive')
 
@@ -7,8 +13,6 @@ low_path = f"{base_path}/lowimages"
 mid_path = f"{base_path}/midimages"
 high_path = f"{base_path}/highimages"
 test_path = f"{base_path}/test"
-
-import tensorflow as tf
 
 IMG_SIZE = (224, 224)
 BATCH_SIZE = 32
@@ -69,21 +73,13 @@ history_mid = model_mid.fit(mid_ds, epochs=15)
 model_high = build_model()
 history_high = model_high.fit(high_ds, epochs=15)
 
-import pathlib
-import tensorflow as tf
-import matplotlib.pyplot as plt
-
-# Image size
-img_height = 224
-img_width = 224
-
 # Path to test images
 base_dir = "/content/drive/MyDrive/ScienceFair"
 test_dir = pathlib.Path(base_dir) / 'test'
 test_ds = tf.keras.utils.image_dataset_from_directory(
     test_dir,
     seed=123,
-    image_size=(img_height, img_width),
+    image_size=IMG_SIZE,
     batch_size=1,
     shuffle=False  # Ensures consistent order
 )
@@ -109,23 +105,13 @@ show_predictions(model_low, test_ds)
 # show_predictions(model_mid, test_ds)
 # show_predictions(model_high, test_ds)
 
-import time
-import pathlib
-import tensorflow as tf
-import pandas as pd
-import matplotlib.pyplot as plt
-
-# Image size
-img_height = 224
-img_width = 224
-
 # Test image path
 base_dir = "/content/drive/MyDrive/ScienceFair"
 test_dir = pathlib.Path(base_dir) / 'test'
 test_ds = tf.keras.utils.image_dataset_from_directory(
     test_dir,
     seed=123,
-    image_size=(img_height, img_width),
+    image_size=IMG_SIZE,
     batch_size=1  # Evaluate one image at a time
 )
 
