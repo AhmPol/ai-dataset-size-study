@@ -5,9 +5,9 @@
 This research project investigates how dataset size affects the accuracy and efficiency of AI object detection models.
 We tested three dataset sizes (small, medium, large) using TensorFlow/Keras CNNs and measured **accuracy, loss, and prediction speed**.
 
-* Medium dataset achieved the best performance (91.9% accuracy, 0.09s prediction time).
+* Medium dataset achieved the best performance (91.9% accuracy, 0.14s prediction time).
 * Large dataset had slightly lower accuracy due to overfitting.
-* Small dataset was fast but inaccurate.
+* Small dataset was significantly more inaccurate.
 
 This repo contains:
 
