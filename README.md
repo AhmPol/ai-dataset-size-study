@@ -1,4 +1,4 @@
-# AI Dataset Size Study: Effect on Object Detection Performance
+# Imapct of AI Dataset Size on Object Detection Performance
 
 ## Overview
 
