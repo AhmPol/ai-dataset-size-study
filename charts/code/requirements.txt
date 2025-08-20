@@ -1,1 +1,19 @@
+# Core AI / ML libraries
+tensorflow>=2.12.0
+keras>=2.12.0
+
+# Data handling
+numpy>=1.23.0
+pandas>=1.5.0
+
+# Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Model evaluation & utilities
+scikit-learn>=1.2.0
+
+# Jupyter / Colab support
+notebook>=7.0.0
+jupyterlab>=4.0.0
 
