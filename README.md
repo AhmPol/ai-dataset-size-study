@@ -67,9 +67,9 @@ Or open notebooks directly in **Google Colab**.
 
 ## Final Average Results
 
-* Medium dataset = **91.9% accuracy, 0.09s speed**
-* Small dataset = **70.1% accuracy, 0.04s speed**
-* Large dataset = **84.5% accuracy, 0.14s speed**
+* Small dataset = **37.2% accuracy, 0.15s speed**
+* Medium dataset = **91.9% accuracy, 0.14s speed**
+* Large dataset = **84.5% accuracy, 0.15s speed**
 
 ---
 
